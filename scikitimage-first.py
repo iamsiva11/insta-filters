@@ -8,7 +8,6 @@ from skimage.io import imread
 #%matplotlib inline
 
 
-
 show = lambda x: io.imshow(x)
 
 #loading sample images from skimage data module
@@ -22,6 +21,7 @@ io.imshow(image)
 
 #blurred image
 blurred = filters.gaussian(image, sigma=10, multichannel=True)
-io.imshow(blurred)
+#io.imshow(blurred)
+show(blurred)
 
 
