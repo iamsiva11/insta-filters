@@ -24,9 +24,12 @@ def split_image_into_channels(image):
 	blue_channel  = image[:,:,2]
 
 
+def merge_channels(r,g,b):
+	return np.stack([r,g,b],axis=2)
 
-image= get_image("http://www.toursara.com/images/geo_pic.1363.10.jpg")
+
+
+image = get_image("http://www.toursara.com/images/geo_pic.1363.10.jpg")
 show(image)
-
 r,g,b = split_image_into_channelsimage()
 
